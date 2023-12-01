@@ -22,6 +22,8 @@ body {
   padding: 10px 20px;
   background: linear-gradient(105deg, #056088 10.57%, #09a7ca 96.62%);
   transition: 200ms all;
+  color: #ffff;
+  font-size: 14px;
 }
 
 .primary-button:hover {
