@@ -17,3 +17,22 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.primary-button {
+  padding: 10px 20px;
+  background: linear-gradient(105deg, #056088 10.57%, #09a7ca 96.62%);
+  transition: 200ms all;
+}
+
+.primary-button:hover {
+  box-shadow: 1px 4px 22px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.header {
+  z-index: 1;
+  position: relative;
+  background-image: url("/img/header-bg.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
