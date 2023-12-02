@@ -1,5 +1,6 @@
 import FeatureSection from "./components/Feature/FeatureSection";
 import HeaderSection from "./components/Header/HeaderSection";
+import ServicesSection from "./components/Services/ServicesSection";
 
 const App = () => {
   return (
@@ -9,6 +10,9 @@ const App = () => {
       </>
       <>
         <FeatureSection />
+      </>
+      <>
+        <ServicesSection />
       </>
     </div>
   );
