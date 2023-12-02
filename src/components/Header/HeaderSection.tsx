@@ -1,19 +1,39 @@
+import React from "react";
 import styled from "styled-components";
+import MobileMenu from "../Burger/MobileMenu";
+import BurgerMenu from "../Burger/BurgerMenu";
 
 const HeaderSection = () => {
+  const [open, setOpen] = React.useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+
+    if (open) {
+      document.body.classList.remove("menu-open");
+      document.documentElement.classList.remove("menu-open");
+    } else {
+      document.body.classList.add("menu-open");
+      document.documentElement.classList.add("menu-open");
+    }
+  };
   return (
-    <StyledHeader className="header">
+    <StyledHeader id="home" className="header">
+      <MobileMenu menuOpen={open} toggleMenu={toggleMenu} />
       <div className="text-[#fff]">
         <div className="header-bar">
           <div className="my-container flex justify-between items-center py-4">
             <div className="logo font-bold text-[40px]">DB-</div>
 
             <div className="header-nav flex items-center gap-12">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Gallery</a>
-              <a href="#">Contact</a>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#services">Gallery</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <div className="header-burger hidden">
+              <BurgerMenu menuOpen={open} toggleMenu={toggleMenu} />
             </div>
           </div>
         </div>
@@ -48,6 +68,9 @@ const StyledHeader = styled.div`
   @media (max-width: 645px) {
     .header-nav {
       display: none;
+    }
+    .header-burger {
+      display: block;
     }
     .header-content__description {
       width: 100%;

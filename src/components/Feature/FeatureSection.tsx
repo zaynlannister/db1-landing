@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FeatureSection = () => {
   return (
-    <StyledFeature className="my-container">
+    <StyledFeature id="about" className="my-container">
       <div className="py-16 flex items-center gap-12 feature-container">
         <div className="feature-images flex gap-4 w-[50%]">
           <div className="flex flex-col gap-4">

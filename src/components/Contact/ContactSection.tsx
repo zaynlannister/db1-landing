@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 const ContactSection = () => {
   return (
-    <StyledContactSection className="contact-container py-20 mt-16">
+    <StyledContactSection
+      id="contact"
+      className="contact-container py-20 mt-16"
+    >
       <div className="my-container text-[#fff]">
         <div className="text-center">
           <p className="text-[45px] font-bold contact-title">

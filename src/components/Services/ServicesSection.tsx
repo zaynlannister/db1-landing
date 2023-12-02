@@ -21,7 +21,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <StyledServices className="my-container">
+    <StyledServices id="services" className="my-container">
       <div className="text-center">
         <p className="text-[#056088] text-[24px] font-bold my-4">
           Our services
