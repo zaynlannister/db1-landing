@@ -23,17 +23,24 @@ const ServicesSection = () => {
   return (
     <StyledServices id="services" className="my-container">
       <div className="text-center">
-        <p className="text-[#056088] text-[24px] font-bold my-4">
+        <p
+          data-aos="fade-down"
+          className="text-[#056088] text-[24px] font-bold my-4"
+        >
           Our services
         </p>
-        <p>
+        <p data-aos="fade-up">
           Our services include building new buildings and renovating old
           buildings
         </p>
       </div>
       <div className="services-cards flex gap-8 mt-8">
         {services.map((item, index) => (
-          <div key={index} className="services__card border border-silver p-4 ">
+          <div
+            data-aos="fade-right"
+            key={index}
+            className="services__card border border-silver p-4 "
+          >
             <img src={`/img/${item.img}.svg`} alt="img" />
             <p className="text-[20px] font-bold mt-2">{item.title}</p>
             <p>{item.description}</p>

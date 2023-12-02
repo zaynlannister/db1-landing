@@ -4,7 +4,10 @@ const FeatureSection = () => {
   return (
     <StyledFeature id="about" className="my-container">
       <div className="py-16 flex items-center gap-12 feature-container">
-        <div className="feature-images flex gap-4 w-[50%]">
+        <div
+          data-aos="fade-right"
+          className="feature-images flex gap-4 w-[50%]"
+        >
           <div className="flex flex-col gap-4">
             <img src="/img/feature-1.jpg" alt="img" />
             <img src="/img/feature-2.jpg" alt="img" />
@@ -14,7 +17,7 @@ const FeatureSection = () => {
             <img src="/img/feature-3.jpg" alt="img" />
           </div>
         </div>
-        <div className="w-[50%] feature-content">
+        <div data-aos="fade-left" className="w-[50%] feature-content">
           <p className="text-[#056088] text-[24px] font-bold">Our company</p>
           <p className="text-[#434343] my-4">
             Debuilds is a team of architects, interior design, and contractors
